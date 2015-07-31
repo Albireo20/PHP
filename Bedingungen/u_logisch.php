@@ -4,7 +4,8 @@
 	</head>
 	<body>
 		<?php
-			if($_POST["pw"] == "bingo" || $_POST["pw"] == "kuckuck")
+			if(($_POST["bname"] == "Marten" && $_POST["pw"] == "Hamburg") || 
+				 ($_POST["bname"] == "Schmitz" && $_POST["pw"] == "Berlin"))
 				echo "Zugang gestattet";
 			else
 				echo "Zugang verweigert";
